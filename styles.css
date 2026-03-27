@@ -1,0 +1,257 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "Funnel Display", sans-serif;
+
+    --color-navy: #141b41;
+    --color-navy-lighter: #242d5c;
+    --color-navy-darker: #0d1330;
+
+    --color-blue: #435bd1;
+    --color-blue-alt: #5170ff;
+    --color-pink: #ff99cf;
+    --color-yellow: #ffde59;
+    --color-white: #ececec;
+
+    --bold-border-width: 0.13em;
+
+    --link-button-color: var(--color-pink);
+
+    background-color: var(--color-navy);
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    font-size: 1.15em;
+    line-height: 1.5;
+}
+
+/* https://developer.mozilla.org/docs/Web/HTML/Element/Heading_Elements#specifying_a_uniform_font_size_for_h1 */
+h1 {
+    margin-block: 1em;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: "Horizon";
+    line-height: 1.1;
+    color: var(--color-yellow);
+}
+
+a.link-button {
+    padding: 0.75em;
+    border: var(--bold-border-width) solid var(--link-button-color);
+    color: var(--link-button-color);
+    font-weight: bold;
+    border-radius: 1em;
+    box-sizing: border-box;
+
+    height: fit-content;
+
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--link-button-color);
+        color: var(--color-navy);
+        cursor: pointer;
+    }
+}
+
+header {
+    height: 2em;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+
+    border-bottom: 0.13em solid var(--color-navy-lighter);
+
+    * {
+        height: 100%;
+    }
+}
+
+div.media-icons-container {
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    gap: 0.5em;
+
+    > a {
+        color: var(--color-pink);
+        font-size: 1.4em;
+
+        &:hover {
+            color: var(--color-white);
+        }
+    }
+}
+
+section, footer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0em;
+
+    > div {
+        max-width: 65em;
+        padding-left: 2em;
+        padding-right: 2em;
+        width: 100%;
+        background-color: var(--color-navy);
+    }
+}
+
+section#lead .columns {
+    flex-direction: column-reverse;
+}
+
+section#olympiad, footer {
+    background-color: var(--color-navy-darker);
+
+    > div { 
+        display: flex;
+        background-color: var(--color-navy-darker);
+    }
+}
+
+section#olympiad > div {
+    gap: 0.35em;
+    align-items: center;
+
+    > a {
+        line-height: 0;
+    }
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+
+    img {
+        max-width: 31%;
+        min-width: 18em;
+        flex-grow: 1;
+        height: auto;
+        border-radius: 1em;
+    }
+}
+
+footer {
+    padding: 1.5em 0;
+    > div {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    
+        gap: 1em;
+    
+        > img {
+            height: 3em;
+        }
+    
+        .copyright {
+            color: var(--color-white);
+            opacity: 0.5;
+        }
+    }
+}
+
+div.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.columns {
+    display: flex;
+    gap: 1em;
+
+    flex-direction: column;
+
+    > * {
+        max-width: 100%;
+        flex-shrink: 1;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+div.outline-card {
+    --outline-card-color: var(--color-pink);
+
+    &:nth-child(even) {
+        --outline-card-color: var(--color-blue-alt);
+    }
+
+    border: var(--bold-border-width) solid var(--outline-card-color);
+    border-radius: 1em;
+    padding: 1em;
+
+    span.title {
+        font-weight: bold;
+        font-size: 1.3em;
+
+        font-family: unset;
+
+        flex-grow: 1;
+        margin: 0;
+    }
+}
+
+div.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    font-weight: lighter;
+
+    > div {
+        display: flex;
+        align-items: end;
+        flex-wrap: wrap-reverse;
+        gap: 1em;
+    
+        img {
+            width: 5em;
+            height: 5em;
+            border-radius: 1em;
+        }
+    }
+}
+
+div.help-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    border-style: dashed;
+
+    > .button-container {
+        justify-content: center;
+        --link-button-color: var(--outline-card-color);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .columns {
+        flex-direction: row;
+
+        > * {
+            width: 0;
+            flex: 1 1 0;
+        }
+    }
+
+    section#lead .columns {
+        flex-direction: row;
+    }
+}

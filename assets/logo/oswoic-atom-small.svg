@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57.137mm" height="57.135mm" version="1.1" viewBox="0 0 57.137 57.135" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath98-3-7-9">
+   <path d="m2341.9 828.66h1237.9v1233.9h-1237.9z" clip-rule="evenodd"/>
+  </clipPath>
+  <clipPath id="clipPath106-1-3-7">
+   <path d="m0 0h1239v1235h-1239z"/>
+  </clipPath>
+  <clipPath id="clipPath122-0-62-4">
+   <path d="m2420 893.63h1081.6v1078.2h-1081.6z" clip-rule="evenodd"/>
+  </clipPath>
+  <clipPath id="clipPath130-3-1-0">
+   <path d="m0 0h1082v1079h-1082z"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(4.1542 -184.88)">
+  <g transform="matrix(.046157 0 0 .046304 -112.25 146.51)" stroke-width="1.8314">
+   <g clip-path="url(#clipPath98-3-7-9)" stroke-width="1.8314">
+    <g transform="translate(2341,828)" stroke-width="1.8314">
+     <g stroke-width="1.8314">
+      <g clip-path="url(#clipPath106-1-3-7)" stroke-width="1.8314">
+       <g transform="matrix(4.82 0 0 4.82 .91626 .65955)" stroke-width="1.8314">
+        <path d="m0 0h257v256h-257z" fill="#ffde59"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g transform="matrix(.047264 0 0 .04797 -115.51 144.72)" clip-path="url(#clipPath122-0-62-4)" stroke-width="1.7781">
+   <g transform="translate(2420,893)" stroke-width="1.7781">
+    <g stroke-width="1.7781">
+     <g clip-path="url(#clipPath130-3-1-0)" stroke-width="1.7781">
+      <g transform="matrix(4.2116 0 0 4.2116 .035645 .63068)" stroke-width="1.7781">
+       <path d="m0 0h257v256h-257z" fill="#5170ff"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+   <circle cx="24.437" cy="213.45" r="22.554" fill="#ffde59"/>
+   <path d="m34.208 196.52-8.9031 15.42h18.59a19.546 19.546 0 0 0-9.6872-15.42zm-19.529 0.0238a19.546 19.546 0 0 0-9.6986 15.397h18.588zm-9.698 18.404a19.546 19.546 0 0 0 19.455 18.043 19.546 19.546 0 0 0 19.455-18.043z" fill="#5170ff"/>
+   <circle cx="24.437" cy="213.45" r="6.0143" fill="#ffde59"/>
+   <circle cx="24.437" cy="213.45" r="3.0071" fill="#141b41"/>
+  </g>
+ </g>
+</svg>
